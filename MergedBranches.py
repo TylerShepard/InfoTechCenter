@@ -1,17 +1,24 @@
-# Code Name - Hornet
+# Programmer: Tyler Sheaprd
+# Date:2.21.22
+# Version: 1.1
+
+
+#Libraries Imported Here
 #Print to one line w/ time delay between prints
 from time import sleep
+import random
 import colorama
 from colorama import Fore, Back, Style
 colorama.init(strip=False, autoreset=True)
 
+# Code Name - Hornet
 print(Fore.RED + "Welcome to Hornets InfoTechCenter\n")
 sleep(1.0)
 
 print("Hornet's Operating System Booting Up")
 
 #GAS BRANCH
-import random
+
 
 # Gas Level Function
 def gasLevelGauge():
