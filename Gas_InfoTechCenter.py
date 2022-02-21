@@ -9,21 +9,22 @@ def gasLevelGauge():
 
 gasLevelIndicator = gasLevelGauge()
 
-# Create If-ELIF-ELSE statements using the Comparative Operator == Equal to in order to display gas level messages
+# Create If-ELIF-ELSE statements the Comparative Operator == Equal To in order to display gas level messages
 def gasLevelAlert():
+    gasStations = ["Shell","BP","Citgo","Circle K","Mobil","Speedway","Marathon","Love's","Meijer","Costco","Sunoco"]
+    
     if gasLevelIndicator == "Empty":
-        print("***WARNING YOU HAVE RUN OUT OF GAS***\n     Calling Emergency Contact")
+        print("   WARNING YOU ARE ON EMPTY\nCalling Emergency Contact")
     elif gasLevelIndicator == "Low":
-        print("***WARNING YOU HAVE ALMOST RUN OUT OF GAS***\n     THE CLOSEST GAS STATION IS")
-    elif gasLevelIndicator == " Quarter Tank":
-        print("You are on a QUARTER TANK of gas\nStart Planing a Trip to The Gas Station!!!")
-    elif gasLevelIndicator == " Half Tank":
-        print("You are on a HALF TANK of gas\nYou have 125 more miles to empty")
-    elif gasLevelIndicator == " Three Quarter Tank":
-        print("You have a Three Quarters Tank of gas\nKeep on trucking away with your 200 miles of gas")
+        print("      WARNING\nYour gas tank is low on gas\nThe closest gasoline station is " + random.choice(gasStations)
+    elif gasLevelIndicator == "Quarter Tank":
+        print("You have a quarter tank of gas left\nThe closest gasoline station is " + random.choice(gasStations)
+    elif gasLevelIndicator == "Half Tank":
+        print("You have a Half tank of gas left\nYou have 126 miles to empty")
+    elif gasLevelIndicator == "Three Quarter Tank":
+        print("You have Three quarter tank of gas left\nYou have 210 miles to empty")
     else:
-        print("You have a FULL of gas\nCongrats you just spent who knows how long out side for some gasoline")
-
+     print("You have Full of gas left\nYou have 310 miles to empty")
 
 # Call Functions Here
 gasLevelAlert()
